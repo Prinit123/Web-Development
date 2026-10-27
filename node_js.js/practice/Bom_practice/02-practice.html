@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Document</title>
+</head>
+<body>
+           <button id="button">click</button >
+
+           <input type="text" id="text" placeholder="enter my name ">
+</body>
+<script>
+           const button = document.getElementById("button");
+           const text = document.getElementById("text");
+
+           button.addEventListener("click",()=>{
+                      alert("enter prinit");
+           })
+
+           text.addEventListener("input",()=>{
+                      console.log(text.value);
+           })
+</script>
+</html>

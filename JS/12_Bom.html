@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+
+    <h1>Welcome to the BOM Example page</h1>
+    <button onclick="showAlert()">showAlert</button>
+    <button onclick="PromptName()">Prompt Name</button>
+    <button onclick="ConfirmAction()">Confirm Action</button>
+    <button onclick="showLocationInfo()">showLocationInfo</button>
+    <button onclick="locationreload()">reload</button>
+    <button onclick="goback()">Go Back</button>
+    <button onclick="screeninfo()">show screen information</button>
+    <button onclick="showBrowserInfo()">showBrowserInfo</button>
+
+    <p id="output"></p>
+
+    <button id="clickme">click me</button>
+    <div id="output"></div>
+</body>
+<script>
+
+    function showAlert(){
+        alert('This is basic alert using BOM!')
+    }
+
+    function PromptName(){
+        const name = prompt('What is your name?')
+        if(name){
+            document.getElementById("output").textContent="Hello, "+ name + "!";
+        }
+    }
+
+    function ConfirmAction(){
+        let action = confirm('Do You Really want to continue ?')
+        document.getElementById("output").textContent =  result /*action or result*/
+        ? "You chose to continue"
+        : "You cancelled the action.";
+    }
+
+    function ConfirmAction() {
+      let action = confirm("Do you really want to continue?");
+      document.getElementById("output").textContent = action
+        ? "You chose to continue."
+        : "You cancelled the action." ;
+    }
+
+    function showLocationInfo(){
+        const loc =location;
+        document.getElementById("output").innerHTML =
+        `<strong>location Info :</strong><br>
+        Href : ${loc.href}<br>
+        Hostname : ${loc.hostname}<br>
+        Pathname : ${loc.pathname}<br>
+        Protocol : ${loc.protocol}`;
+    }
+
+    function locationreload(){
+        location.reload();
+    }
+
+    function goback() {
+        history.back();
+    }
+
+    function screeninfo(){
+        const info = `Screen width: ${screen.width},height: ${screen.height}`;
+        document.getElementById("output").textContent = info;
+    }
+
+
+        const button = document.getElementById("clickme");
+        const output = document.getElementById("output");
+
+        button.addEventListener("click",()=>{
+                    const h = window.heigh
+                    const width = window.innerWidth;
+                    const height = window.innerHeight;
+                    output.textContent = `Width: ${width}px, Height: ${height}px`;
+
+
+        })
+
+    function showBrowserInfo(){
+        const nav = navigator;
+        const info = `Browser Info:
+        UserAgent: ${nav.userAgent}
+        Language: ${nav.onLine}`;
+        document.getElementById("output").textContent = info;
+    }
+
+// BOM (Browser Object Model) is a collection of objects provided by the web browser that lets JavaScript interact with the browser itself (rather than just the HTML page).
+
+// With the BOM, you can:
+
+// Open or close browser windows
+// Get the browser's URL
+// Navigate to another page
+// Show alert/confirm/prompt dialogs
+// Access browser history
+// Get screen information
+
+</script>
+</html

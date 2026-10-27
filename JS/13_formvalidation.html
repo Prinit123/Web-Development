@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="myform()">
+        Name: <input type="text" name="" id="name">
+        <br>
+        emali: <input type="email" name="" id="email">
+        <br>
+        Password : <input type="password" name="" id="password">
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+<script>
+    function myform(){
+        let Name=document.getElementById('name').value
+        let Email=document.getElementById('email').value
+        let Password=document.getElementById('password').value
+
+
+        if(Name==""){
+            alert("name Field is empty")
+            return false
+        }
+        if(Email==""){
+            alert("email Field is empty")
+            return false
+        }
+        if(Password==""){
+            alert("password Field is empty")
+            return false
+        }
+        else{
+            return true
+        }
+    }
+</script>
+</html>

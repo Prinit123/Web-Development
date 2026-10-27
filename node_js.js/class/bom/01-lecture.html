@@ -1,0 +1,91 @@
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Object Example</title>
+    bom= bowser object model
+</head>
+<body>
+    <h1>Window Object Example</h1>
+    <button id="showSizeBtn">Show Window Size</button>
+    <button id="showLocationBtn">Show Location</button>
+    <button id="openNewWindowBtn">Open New Window</button>
+    <button id="closeWindowBtn">Close This Window</button>
+    <button id="alertBtn">Show Alert</button>
+    <button id="confirmBtn">Show Confirm</button>
+    <button id="promptBtn">Show Prompt</button> 
+     /*//for taking input 
+    <p id="output"></p>
+
+    <script>
+        // Get references to the buttons and output paragraph
+        const showSizeBtn = document.getElementById('showSizeBtn');
+        const showLocationBtn = document.getElementById('showLocationBtn');
+        const openNewWindowBtn = document.getElementById('openNewWindowBtn');
+        const closeWindowBtn = document.getElementById('closeWindowBtn');
+        const alertBtn = document.getElementById('alertBtn');
+        const confirmBtn = document.getElementById('confirmBtn');
+        const promptBtn = document.getElementById('promptBtn');
+        const output = document.getElementById('output');
+
+        let newWindow;
+
+        // Show window size
+        showSizeBtn.addEventListener('click', () => {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            output.textContent = Window Size: ${width} x ${height};
+        });
+
+        // Show location information
+        showLocationBtn.addEventListener('click', () => {
+            const locationInfo = `
+                <strong>Location Information:</strong><br>
+                URL: ${window.location.href}<br>
+                Protocol: ${window.location.protocol}<br>
+                Host: ${window.location.host}<br>
+                Pathname: ${window.location.pathname}
+            `;
+            output.innerHTML = locationInfo;
+        });
+
+        // Open a new window
+        openNewWindowBtn.addEventListener('click', () => {
+            newWindow = window.open('https://www.kictindia.com', '_blank', 'width=1000,height=1000');
+        });
+
+        // Close the new window
+        closeWindowBtn.addEventListener('click', () => {
+            if (newWindow) {
+                newWindow.close();
+            } else {
+                output.textContent = 'No window to close!';
+            }
+        });
+
+        // Show an alert
+        alertBtn.addEventListener('click', () => {
+            window.alert('This is an alert dialog!');
+        });
+
+        // Show a confirm dialog
+        confirmBtn.addEventListener('click', () => {
+            const result = window.confirm('Do you want to proceed?');
+            output.textContent = result ? 'User chose OK' : 'User chose Cancel';
+        });
+
+        // Show a prompt dialog
+        promptBtn.addEventListener('click', () => {
+            const result = window.prompt('Please enter your name:');
+            if (result !== null) {
+                output.textContent = Hello, ${result}!;
+            } else {
+                output.textContent = 'User canceled the prompt.';
+            }
+        });
+    </script>
+</body>
+</html> -->

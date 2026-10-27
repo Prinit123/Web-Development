@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>window\Browser Object Model.</title>
+</head>
+<body>
+           <button id="clickme">click me</button>
+           <div id="output"></div>
+</body>
+<script>
+           const button = document.getElementById("clickme");
+           const output = document.getElementById("output");
+
+           button.addEventListener("click",()=>{
+                      const h = window.heigh
+                      const width = window.innerWidth;
+                      const height = window.innerHeight;
+                      output.textContent = `Width: ${width}px, Height: ${height}px`;
+
+
+           })
+</script>
+</html>

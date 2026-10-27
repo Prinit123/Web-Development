@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Document</title>
+</head>
+<body>
+           <button onclick="addnewheading()">click to add new heading!</button>
+</body>
+<script>
+           function addnewheading(){
+
+                      const newheading = document.createElement("h1");
+
+                      newheading.textContent = "this is a new heading";
+
+                      document.body.appendChild(newheading);
+           }
+           addnewheading();
+</script>
+</html>

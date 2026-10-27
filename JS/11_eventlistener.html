@@ -1,0 +1,164 @@
+<!-- An event listener is a function that waits for a specific event (such as a click, key press, or mouse movement) to happen on an element. When that event occurs, the function is executed. -->
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="para">Click</button>
+    <button id="para2">DblClick</button>
+    <button id="para3">Mouseover</button>
+</body>
+<script>
+    let para1=document.getElementById('para')
+    para1.addEventListener("click",()=>{
+        alert("hello!!")
+    })
+    let para2=document.getElementById('para2')
+    para2.addEventListener("dblclick",()=>{
+        alert("Good morning!!")
+    })
+    let para3=document.getElementById('para3')
+    para3.addEventListener("mouseover",()=>{
+        alert(" hello Good morning!!")
+    })
+</script>
+</html>
+
+<!-- 
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mouseover Example</title>
+</head>
+
+<body>
+
+    <h2 id="message">Hover over the button</h2>
+
+    <button id="btn">Hover Me</button>
+
+    <script>
+        const btn = document.getElementById("btn");
+        const message = document.getElementById("message");
+
+        btn.addEventListener("mouseover", function () {
+            message.textContent = "Mouse is over the button!";
+        });
+    </script>
+
+</body>
+
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="para">Clickme</button>
+</body>
+
+<script>
+    let para1 = document.getElementById('para');
+    para1.addEventListener("Click",()=>{
+        alert()
+    })
+</script>
+</html> -->
+
+<!-- q3 -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <table border="2">
+        <tr>
+            <th >Person</th>
+            <th>Age</th>
+            <th >Person</th>
+
+        </tr>
+        
+        <tr>
+            <td>chris</td>
+            <td>38</td>
+            <td>chris</td>
+
+        </tr>
+            
+        <tr>
+            <td>Dennis</td>
+            <td>45</td>
+            <td>Dennis</td>
+
+        </tr>
+        
+        <tr>
+            <td>Sarah</td>
+            <td>29</td>
+            <td>Sarah</td>
+
+        </tr>
+        
+        <tr>
+            <td>Karen</td>
+            <td>47</td>
+            <td>Karen</td>
+
+        </tr>
+        
+        
+    </table> -->
+<!-- </body>
+<script>
+   
+    let table1 = document.createElement('table')
+    table1.style.border="2px solid black"
+
+    let row1=document.createElement('tr')
+    let col1=document.createElement('td')
+    col1.innerText="name"
+    row1.append(col1)
+    let col2 = document.createElement('td')
+    col2.innerText='age'
+    row1.append(col2)
+    table1.append(row1)
+
+    let row2 = document.createElement('tr')
+    let col3=document.createElement('td')
+    col3.innerText='rahul'
+    row2.append(col3)
+    let col4 = document.createElement('td')
+    col4.innerText='24'
+    row2.append(col4)
+    table1.append(row2)
+
+    let row3 = document.createElement('tr')
+    let col5 = document.createElement('td')
+    col5.innerText='rajesh'
+    row3.append(col5)
+    let col6 = document.createElement('td')
+    col6.innerText='31'
+    row3.append(col6)
+    table1.append(row3)
+
+    document.body.append(table1)
+
+
+    
+</script>
+</html> -->

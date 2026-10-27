@@ -1,0 +1,37 @@
+let a = 4;
+if(a==1){
+           console.log("31");
+}
+if(a==2){
+           console.log("28");
+}
+if(a==3){
+           console.log("31");
+}
+if(a==4){
+           console.log(" 30");
+}
+if(a==5){
+           console.log("31");
+}
+if(a==6){
+           console.log("30");
+}
+if(a==7){
+           console.log("31");
+}
+if(a==8){
+           console.log("31");
+}
+if(a==9){
+           console.log("30");
+}
+if(a==10){
+           console.log("31");
+}
+if(a==11){
+           console.log("30");
+}
+if(a==12){
+           console.log("31");
+}

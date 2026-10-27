@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object model</title>
+</head>
+<body>
+    <button id="btn">click me</button>
+
+    <input type="text" name="" id="ni"  placeholder="enter name">
+
+    <button id="addtext">Add text</button>
+
+    <div id="output"></div>
+</body>
+<script>
+    const button = document.getElementById("btn");
+
+    const name = document.getElementById("ni");
+
+
+    button.addEventListener("click",()=>{
+        alert("button was clicked");
+    })
+
+    name.addEventListener("input",()=>{
+        console.log(name.value);
+
+    })
+
+    const btnadd = document.getElementById("addtext");
+    const output = document.getElementById("output");
+
+    btnadd.addEventListener("click",()=>{
+        output.innerHTML = "<b>Hello world</b>";
+        output.textContent = "Hello world";
+        output.style.color = "red";
+    })
+</script>
+</html>

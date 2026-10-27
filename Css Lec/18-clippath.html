@@ -1,0 +1,71 @@
+<!-- <!doctype html>
+<html lang="en">
+
+<head>
+           <meta charset="UTF-8" />
+           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+           <title>Document</title>
+           <style>
+                      div {
+                                 height: 120px;
+                                 width: 120px;
+                                 background-color: skyblue;
+                                 background-image: url(./1.jpg);
+                                 /* clip-path: polygon(0% 0%, 50% 0%, 100% 50%, 75% 100%, 0% 100%); */
+
+                                 /* The first number (X) controls horizontal movement: 0% is the far-left, and 100% is the far-right.The second number (Y) controls vertical movement: 0% is the absolute top, and 100% is the absolute bottom. */
+
+                                 /* clip-path: polygon(0% 0% , 100% 0%, 100% 100% , 0% 100% ); */
+                                 clip-path:polygon(50% 0% , 0% 100% , 100% 100% );
+                                 /* clip-path: polygon(75% 0% , 100% 50% , 75% 100%, 0% 100% ,25% 50% , 0% 0%); */
+
+                                 /*50% 0% (Point 1: Top Center)
+                                 X is 50% (right in the middle horizontally).
+                                 Y is 0% (at the very top edge).
+                                 
+                                 0% 100% (Point 2: Bottom Left)
+                                 X is 0% (far left edge).
+                                 Y is 100% (very bottom edge).
+                                 
+                                 100% 100% (Point 3: Bottom Right)
+                                 X is 100% (far right edge). Y is 100% (very bottom edge). */
+                                 
+                                 
+                                 /* clip-path: polygon(50% 0%, 0% 100%, 100% 100%); */
+                                 /* clip-path: polygon(50% 0%,0% 100% ,100% 100%); */
+                                 /* A simple triangle*/
+                      }
+           </style>
+</head>
+
+<body>
+           <div></div>
+</body>
+
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 120px;
+            width: 120px;
+            background-color: skyblue;
+            background-image: url(./1.jpg);
+
+            clip-path: polygon(50% 0% , 0% 100% , 100% 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Document</title>
+</head>
+<body>
+           <button onclick="addparagrapha('hi my name is prinit!')">click me</button>
+
+           <div id="output"></div>
+</body>
+<script>
+           function addparagrapha(usertext){
+           const newpara = document.createElement("p");
+           newpara.textContent = usertext;
+           document.body.appendChild(newpara);
+           }
+</script>
+</html>

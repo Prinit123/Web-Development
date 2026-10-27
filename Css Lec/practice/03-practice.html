@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #p1{
+            height: 120px;
+            width: 120px;
+            border: 5px;
+            background-color:aqua;
+            border-color: black;
+            border-style: solid;
+            position: relative;
+            animation-name: mybox1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes mybox1 {
+            from{
+                top: 120px;
+                left: 0px;
+                border-radius: 0%;
+            }
+            to{
+                top:0px;
+                left: 500px;
+                border-radius: 100%;
+            }
+            
+        }
+
+        div{
+            height: 120px;
+            width: 120px;
+            border: 5px;
+            background-color: aqua;
+            border-style: solid;
+            border-color: black;
+            position: relative;
+            animation-name: mybox;
+            animation-duration: 5s;
+            animation-iteration-count: 5;
+        }
+
+        @keyframes mybox {
+
+            from{
+                left: 0px;
+                /* top: 0px; */
+                border-radius: 0%;
+            }
+            to{
+                left: 500px;
+                /* top:500px; */
+                border-radius: 100%;
+
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+    <div id="p1"></div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Document</title>
+</head>
+
+<body>
+           <input type="text" placeholder="enter user name" id="in">
+           <button id="but">add name</button>
+
+           <div class="" id="output"></div>
+</body>
+<script>
+           const but = document.getElementById("but");
+           const text = document.getElementById("in");
+
+           but.addEventListener("click", () => {
+                      const val = text.value;
+                      localStorage.setItem("Username", val);
+
+                      /*for macbook if not run
+                      console.log("Saved:",val)
+                      */
+           })
+
+           const out = document.getElementById("output");
+
+           window.addEventListener("load",()=>{
+                      const val = localStorage.getItem("Username");
+                      out.textContent = val ;
+           })
+</script>
+
+</html>
+
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Document</title>
+</head>
+<body>
+           <button id="clickme">click me</button>
+
+</body>
+<script>
+           const button = document.getElementById("clickme");
+
+           button.addEventListener("click",()=>{
+                      const pa = document.createElement("p");
+                      pa.textContent = "prinitf chauhan";
+
+                      document.body.appendChild(pa);
+           })
+</script>
+</html>

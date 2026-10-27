@@ -1,0 +1,51 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="return save()">
+        <input type="text" placeholder="Enter name" id="name"/>
+        <input type="text" placeholder="Enter Password" id="pass"/>
+        <input type="text" placeholder="Enter confrim" id="con"/>
+
+        <input type="submit" value="Submit"/>
+
+    </form>
+</body>
+<script>
+    function save()
+    {
+    /*You are telling JavaScript to find the envelope, open it up, and hand you the exact text written on the letter inside.*/
+
+    /*document.getElementById("pass") = The HTML <input> box on the page.
+    .value = The actual text the user typed into that box.*/
+
+        const name = document.getElementById("name").value;
+        const pass = document.getElementById("pass").value;
+        const con = document.getElementById("con").value;
+
+        /* if(name == '' || pass == ''|| con == '')
+    {
+        alert("Please fill all details");
+        return false;
+    } */
+
+
+    if(pass != con)
+    {
+        alert("Password and confirm password should be same");
+        return false;
+    }
+    else{
+        alert("Form submitted successfully");
+        return true;
+    }
+
+    }
+</script>
+</html>  -->
+
+

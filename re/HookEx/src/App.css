@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Main App */
+.app {
+  min-height: 100vh;
+  width: 100%;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Theme */
+.app.light {
+  background-color: white;
+  color: black;
+}
+
+/* Dark Theme */
+.app.dark {
+  background-color: #121212;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+}
+
+/* Light Navbar */
+.light .navbar {
+  background-color: #f2f2f2;
+}
+
+/* Dark Navbar */
+.dark .navbar {
+  background-color: #1f1f1f;
+}
+
+/* Button */
+.navbar button {
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Light Theme Button */
+.light button {
+  background-color: #222;
+  color: white;
+}
+
+/* Dark Theme Button */
+.dark button {
+  background-color: white;
+  color: black;
+}
+
+/* Home */
+.home {
+  text-align: center;
+  padding-top: 100px;
+}
+
+.home h1 {
+  margin-bottom: 20px;
+}
+
+.home h2 {
+  margin-bottom: 20px;
+}

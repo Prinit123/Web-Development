@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Document Object Model</title>
+</head>
+<body>
+           <button id="btn">clickme</button>
+
+           <input type="text" id="in">
+
+           <button id="addtext">clidk me</button>
+
+           <div id="output"></div>
+</body>
+<script>
+           const button = document.getElementById("btn");
+
+           button.addEventListener("click",()=>{
+                      alert("click me");
+           })
+
+           const input = document.getElementById("in");
+
+           input.addEventListener("input",()=>{
+                      console.log(input.value);
+           })
+
+
+           const addtext = document.getElementById("addtext");
+           const output = document.getElementById("output");
+
+
+           addtext.addEventListener("click",()=>{
+                      output.textContent = "hello";
+                      output.style.color = "red";
+           })
+
+</script>
+</html>
+
+

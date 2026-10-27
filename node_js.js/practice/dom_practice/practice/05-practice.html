@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Document</title>
+</head>
+<body>
+           <div id="container"></div>
+</body>
+<script>
+           const container = document.getElementById("container");
+
+           container.innerHTML = `<table border=2px cellspacing=2px cellpadding=20px >
+                      <tr>
+                                 <th>name</th>
+                                 <th>no.</th>
+                      </tr>
+                      <tr>
+                                 <td>prinit</td>
+                                 <td>1</td>
+                      </tr>
+                      <tr>
+                                 <td>sanjay</td>
+                                 <td>2</td>`;
+
+           document.body.appendChild(container);
+</script>
+</html>

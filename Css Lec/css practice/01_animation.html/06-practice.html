@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:120px;
+            width: 120px;
+            background-color: aqua;
+
+            border:4px black solid;
+            position:relative;
+
+            animation-name:mybox;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes mybox {
+            0%{
+                left:0px;
+                border-radius: 100%;
+                /* top:0px; */
+            }
+            20%{
+                left:500px;
+                top:0px;
+                 border-radius: 0%;
+                /* top:350px; */
+            }
+            40%{
+                left:500px;
+                top:350px;
+                border-radius: 100%; 
+            }
+            60%{
+                left:0px;
+                top:350px;
+                border-radius: 0px;
+            }
+            80%{
+                left:0px;
+                top:0px;
+                border-radius: 100px;
+            }
+            100%{
+                left:500px;
+                top:350px;
+                border-radius: 0%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

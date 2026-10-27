@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Document</title>
+</head>
+<body>
+           <button>add img</button>
+           <div></div>
+
+</body>
+<script>
+           const img = document.querySelector("button");
+           const div = document.querySelector("div");
+
+           img.addEventListener("click",()=>{
+                      const img = document.createElement('img');
+                      img.src = './images.jpg';
+                      //console.log(img);   //add img in console
+                     // img.alt = 'not found';
+                      img.style.height = '100px';
+                      img.style.width = '100px';
+                      div.appendChild(img);
+           })
+</script>
+</html>

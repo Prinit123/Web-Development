@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:120px;
+            width:120px;
+            background-color: aqua;
+
+            border:4px black solid;
+            position :relative;
+            
+            animation-name:mybox;
+            animation-duration:5s;
+            animation-iteration-count:infinite;
+        }
+        @keyframes mybox{
+            0%{
+                left:0px;
+            }
+            25%{
+             left:500px;
+                top:0px;  
+            }
+            50%{
+                 top:350px;
+                left:0px;
+            }
+            75%{
+                left:500px;
+                top:350px;
+            }
+            100%{
+                top:0px;
+                left:0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

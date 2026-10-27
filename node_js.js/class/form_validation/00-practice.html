@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+           <meta charset="UTF-8">
+           <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <title>Document</title>
+</head>
+
+<body>
+           <form action="" onsubmit="return save()">
+                      <input type="text" placeholder="enter name" id="name">
+                      <input type="text" placeholder="passwoed" id="pass">
+                      <input type="text" id="con" placeholder="confirm password">
+
+                      <input type="submit" value="Submit" />
+           </form>
+</body>
+<script>
+           function save() {
+                      const name = document.getElementById("name").value;
+                      const pass = document.getElementById("pass").value;
+                      const con = document.getElementById("con").value;
+
+                      if (name == '' || pass == '' || con == '') {
+                                 alert("Please fill all details");
+                                 return false;
+                      }
+
+
+                      if (pass != con) {
+                                 alert("not same confirmed pass ");
+                                 return true;
+                      } else {
+                                 alert("confirmed pass");
+                                 return false;
+                      }
+           }
+</script>
+
+</html>

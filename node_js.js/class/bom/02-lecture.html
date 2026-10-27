@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window / Browser Object Model</title>
+  </head>
+
+  <body>
+    <button id="btnshowsize">show size of window</button>
+
+    <button id="btnshowloc">show location</button>
+    <div id="output"></div>
+  </body>
+  <script>
+    const btnshowsize = document.getElementById("btnshowsize");
+    const btnshowloc = document.getElementById("btnshowloc");
+    const output = document.getElementById("output");
+
+    btnshowsize.addEventListener("click", () => {
+      const h = window.innerHeight;
+      const w = window.innerWidth;
+      output.textContent = `height is ${h} and width ${w}`;
+    });
+    btnshowloc.addEventListener("click", () => {
+      /*const loc1 = window.location.href;
+                    const loc2 = window.location.host;
+                    const loc3 = window.location.hostname;*/
+      const loc4 = window.location.pathname;
+      output.textContent = loc4;
+    });
+
+    // Use querySelector with a dot (.) to target classes
+    /*const btnshowsize = document.querySelector(".btnshowsize");
+const btnshowloc = document.querySelector(".btnshowloc");
+const output = document.querySelector(".output");
+ 
+btnshowsize.addEventListener("click", () => {
+const h = window.innerHeight;
+const w = window.innerWidth;
+ 
+output.textContent = `Height: ${h}px, Width: ${w}px`;
+});
+ 
+btnshowloc.addEventListener("click", () => {
+const loc1 = window.location.href;
+// Let's display the full URL
+output.textContent = `Full URL: ${loc1}`;
+});*/
+  </script>
+</html>
