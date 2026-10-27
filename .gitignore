@@ -1,24 +1,7 @@
-# Dependencies
 node_modules/
 **/node_modules/
-
-# Build output
 dist/
 build/
-
-# Environment variables and secrets
 .env
 .env.*
 !.env.example
-
-# Logs
-*.log
-npm-debug.log*
-
-# Compiled files
-*.exe
-*.o
-*.obj
-
-# Editor settings
-.vscode/
